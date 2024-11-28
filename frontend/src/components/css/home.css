@@ -1,0 +1,97 @@
+:root {
+  --primary-color: #007bff; /* Blue color */
+  --secondary-color: #1a1a1a; /* Dark black for background */
+  --text-color: #ffffff; /* White text color */
+}
+
+/* Home Container */
+.home-container {
+  padding-top: 80px; /* Adjust padding for fixed navbar */
+}
+
+/* Navbar styles */
+.navbar {
+  margin-bottom: 20px;
+  background-color: var(--secondary-color);
+}
+
+.navbar .navbar-brand {
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+.navbar .nav-link {
+  color: var(--text-color);
+}
+
+.navbar .nav-link:hover {
+  color: var(--primary-color);
+}
+
+/* Carousel styles */
+.carousel-section {
+  margin-top: 60px; /* Ensure space for the navbar */
+}
+
+.carousel-caption h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.carousel-caption p {
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+/* Featured Product Section */
+.featured-products {
+  padding: 50px 0;
+  background-color: #f9f9f9;
+}
+
+.watch-card {
+  border: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.watch-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.watch-card .card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.watch-card .card-text {
+  font-size: 1rem;
+  color: var(--text-color);
+}
+
+/* Adjust Image size */
+.watch-card .card-img-top {
+  height: 250px;
+  object-fit: cover;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .carousel-caption h3 {
+    font-size: 1.5rem;
+  }
+
+  .carousel-caption p {
+    font-size: 1rem;
+  }
+
+  .watch-card .card-img-top {
+    height: 200px;
+  }
+
+  .watch-card {
+    margin-bottom: 20px;
+  }
+}
